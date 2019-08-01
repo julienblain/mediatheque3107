@@ -1,6 +1,9 @@
+devweb\meadiathequeweb\Emprunter.class
+devweb\meadiathequeweb\FiltrerCatalogue.class
+devweb\meadiathequeweb\Recherche.class
 devweb\meadiathequeweb\Consulter.class
 devweb\meadiathequeweb\Media.class
 devweb\meadiathequeweb\Authentifier.class
+devweb\meadiathequeweb\Catalogue.class
 devweb\meadiathequeweb\DVD.class
-devweb\meadiathequeweb\Emprunter.class
 devweb\meadiathequeweb\Livre.class

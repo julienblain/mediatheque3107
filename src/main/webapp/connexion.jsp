@@ -1,16 +1,20 @@
+<%-- 
+    Document   : connection
+    Created on : 31 juil. 2019, 16:07:02
+    Author     : Administrateur
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
     </head>
     <body>
+        <%@ include file="menu.jsp" %>
+        <h1>Connection</h1>
+
         <div style="width: 800px;margin-left:auto; margin-right:auto;font-size:30px">
             <form method="POST"  action="/mediatheque/Authentifier">
                 <label for="identifiant">Identifiant 
@@ -24,5 +28,7 @@ and open the template in the editor.
                 <input type="submit" value="Ok">
             </form>
         </div>
+
+        <%@ include file="pied.html" %>
     </body>
 </html>

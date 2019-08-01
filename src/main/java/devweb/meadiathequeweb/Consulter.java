@@ -5,11 +5,9 @@ package devweb.meadiathequeweb;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-import devweb.meadiathequeweb.Media;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -46,6 +44,9 @@ public class Consulter extends HttpServlet {
             resp.sendRedirect(sc.getContextPath() +"/index.html");
             return;
         }
+        sc.getRequestDispatcher("/consulter.jsp").include(req, resp);
+        
+        /*
         resp.setContentType("text/html");
         PrintWriter p = resp.getWriter();
         p.println("<!DOCTYPE html>");
@@ -75,7 +76,7 @@ public class Consulter extends HttpServlet {
         p.println(sb.toString());
         sc.getRequestDispatcher("/pied.html").include(req,resp);
         p.println("</body>");
-        p.println("</html>");
+        p.println("</html>");*/
     }
 
     public void Importe() {

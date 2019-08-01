@@ -44,7 +44,9 @@ public class Emprunter extends HttpServlet {
         HttpSession session = request.getSession(true);
         String id = (String) session.getAttribute("id");
         if (id == null) {
-            response.sendRedirect(sc.getContextPath() + "/connexion.html");
+            //response.sendRedirect(sc.getContextPath() + "/connexion.html");
+            //permet de gagner une ressource car pas de redirection
+            sc.getRequestDispatcher("/connexion.jsp").forward(request, response);         
             return;
         }
         response.setContentType("text/html");
@@ -55,7 +57,7 @@ public class Emprunter extends HttpServlet {
         p.println("<title>Emprunter</title>");
         p.println("</head>");
         p.println("<body>");
-         p.println("<h1 style='text-align:center'>Emprunts</h1>");
+         p.println("<h1 style='text-align:center'>Emprunts de Emprunter</h1>");
                 p.println("</body>");
         p.println("</html>");
     }

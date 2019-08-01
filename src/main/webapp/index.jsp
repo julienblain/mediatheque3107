@@ -4,7 +4,10 @@
     Author     : Administrateur
 --%>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,12 +29,9 @@
     </head>
     <body>
         <h1>Bienvenue à la Médiatheque</h1>
-        <nav>
-            <a href="/mediatheque/Consulter?t=l">Consulter les livres</a>
-            &nbsp;<a href="/mediatheque/Consulter?t=d">Consulter les DVD</a>
-            &nbsp;<a href="/mediatheque/Consulter?=f">Consulter les Films</a>
-            &nbsp;<a href="/mediatheque/Emprunter">Emprunter</a>
-        </nav>
+
+        <%@ include file="menu.jsp" %>
+        <%@ include file="pied.html" %>
     </body>
 </html>
 
